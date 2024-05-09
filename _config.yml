@@ -105,6 +105,37 @@ collections:
     language: cn
     position_number: 18
 
+  user_center_documentation:
+    title: Access Description
+    type: user_center
+    language: en
+    position_number: 1
+  user_center_account:
+    title: Account
+    type: user_center
+    language: en
+    position_number: 2
+  user_center_apikey:
+    title: ApiKey
+    type: user_center
+    language: en
+    position_number: 3
+
+  user_center_documentation_cn:
+    title: 接入说明
+    type: user_center
+    language: cn
+    position_number: 4
+  user_center_account_cn:
+    title: 账户
+    type: user_center
+    language: cn
+    position_number: 5
+  user_center_apikey_cn:
+    title: ApiKey
+    type: user_center
+    language: cn
+    position_number: 6
 
 
 plugins:
@@ -199,6 +230,31 @@ defaults:
       _hide_content: true
   - scope:
       type: "websocket_private_cn"
+    values:
+      _hide_content: true
+
+  - scope:
+      type: "user_center_documentation"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_account"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_apikey"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_documentation_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_account_cn"
+    values:
+      _hide_content: true
+  - scope:
+      type: "user_center_apikey_cn"
     values:
       _hide_content: true
 

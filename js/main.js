@@ -132,6 +132,12 @@ function getShowSidebar(){
 			lang = "en";
 		}
 
+		//合约
+		if(anchorPoint.indexOf("user_center_")==0) {//用户中心
+			model= "user_center";
+		}else {//现货
+			model= "spot";
+		}
 		var firstDiv = model+"_sidebar";
 		var secondDiv = "sidebar_"+lang;
 		return $("#"+firstDiv).children("."+secondDiv);
